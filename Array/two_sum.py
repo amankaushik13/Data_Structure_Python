@@ -19,3 +19,26 @@ class Solution:
             for j in range(i+1, n):
                 if nums[i]+nums[j]==target:
                     return [i,j]
+
+
+#Time Complexity: O(n)
+#Space Complexity: O(n)
+
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        store={}
+        for i, number in enumerate(nums):
+            required_num= target -number
+            if required_num in store:
+                return [i,store[required_num]]
+            else:
+                store[number]=i
+
+
+
+
+
+
+
+
+                
