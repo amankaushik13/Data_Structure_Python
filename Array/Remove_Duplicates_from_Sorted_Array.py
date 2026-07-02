@@ -6,7 +6,7 @@ Consider the number of unique elements in nums to be k​​​​​​​​�
 
 
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums: list[int]) -> int:
         i=0
        
         for j in range(1,len(nums)):
